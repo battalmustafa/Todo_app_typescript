@@ -1,3 +1,10 @@
+<div id="header" align="center">
+<h1>React TypeScript Todo_App with Tailwind</h1>
+<h2>Features: Add Task, Delete Task, Update Status of Task</h2>
+  <img src="https://raw.githubusercontent.com/battalmustafa/Todo_app_typescript/master/public/Screenshot%202023-02-01%20at%2002-00-14%20ToDO%20App.png"/>
+</div>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

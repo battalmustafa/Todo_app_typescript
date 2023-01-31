@@ -22,25 +22,20 @@ export const todoSlice = createSlice({
            
         },
         remove: (state, action) => {
-            // return state.filter((todo) => todo.id !== action.payload);
-            const todoList = window.localStorage.getItem('todoList');
-            if (todoList) {
+            
                 const todoListArr = state;
                 todoListArr.forEach((todo: { id: any; }, index: any) => {
                     if (todo.id === action.payload) {
                         todoListArr.splice(index, 1);
-                        
-                     
 
                     }
                 });
               return state;
-            }
+            
         },
        done: (state, action) => {
         console.log(action.payload);
         const completedTodo: any = state.find(todo => todo.id === action.payload);
-       // completedTodo.completed = true;
         console.log(completedTodo);
             if(completedTodo.completed === true)
            completedTodo.completed = false;
